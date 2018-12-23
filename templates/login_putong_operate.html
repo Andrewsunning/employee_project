@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>普通员工工资核对-员工工资统计系统</title>
+</head>
+<body>
+    这是普通员工登陆后的操作界面
+    <h3>Hi!{{ employee.Ename }} </h3>
+
+    <br>
+    您的岗位：{{ job }}
+    <br>
+    工资月份：{{ date }}
+    <br>
+    迟到次数：{{ lateTimes }}
+    <br>
+    早退次数：{{ earlyTimes }}
+    <br>
+    请假次数：{{ leaveTimes }}
+    <br>
+    基本工资：{{ basicWage }}
+    <br>
+    加班工资：{{ overTimeWage }}
+    <br>
+    考勤工资：{{ checkWage }}
+    <br>
+    实收工资：{{ realWage }}
+    <br>
+    <form action="{{ url_for('login_putong_operate') }}" method="POST">
+        <textarea name="content" cols="30" rows="5" placeholder="您需要反馈的问题"></textarea>
+        <br>
+        年月份：
+        <input type="text" name="month"  placeholder="请输入工资有问题的月份">
+        <br>
+        <button>提交</button>
+    </form>
+</body>
+</html>

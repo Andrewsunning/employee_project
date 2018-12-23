@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>经理工资管理-员工工资统计系统</title>
+</head>
+<body>
+    这是经理登陆后的操作界面
+    Hi!{{ employee.Ename }}
+    <br>
+    <a href="{{ url_for('manager_search') }}">查询员工信息</a>
+    <br>
+    <a href="{{ url_for('manager_update') }}">修改员工信息</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询</title>
+</head>
+<body>
+    <form action="{{ url_for('manager_search') }}" method = 'POST'>
+        员工编号：<input type="text" name="EID" placeholder="员工编号">
+        <br>
+        <button>查询</button>
+        <p>员工岗位：{{ job }}</p>
+        <p>工资月份：{{ date }}</p>
+        <p>迟到次数：{{ lateTimes }}</p>
+        <p>早退次数：{{ earlyTimes }}</p>
+        <p>请假次数：{{ leaveTimes }}</p>
+        <p>基本工资：{{ basicWage }}</p>
+        <p>加班工资：{{ overTimeWage }}</p>
+        <p>考勤工资：{{ checkWage }}</p>
+        <p>实收工资：{{ realWage }}</p>
+    </form>
+</body>
+</html>

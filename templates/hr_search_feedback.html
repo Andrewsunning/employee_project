@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>反馈</title>
+</head>
+<body>
+    <form action="{{ url_for('hr_search_feedback') }}" , method="post">
+        请输入要查找的年月：
+        <input type="text" name="date" placeholder="示例：20140909">
+        <br>
+        <button>反馈查询</button>
+    </form>
+    {% for f in feedback %}
+        <p>反馈内容：{{ f.feedText }}</p>
+        <p>员工编号：{{ f.EID }}</p>
+        <hr>
+    {% endfor %}
+
+
+
+
+
+</body>
+</html>

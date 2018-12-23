@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页-员工工资统计系统</title>
+    <link rel="stylesheet" href="{{ url_for('static' , filename = 'css/index.css') }}">
+</head>
+<body>
+{#<h4 class="page_title">这是主页页面</h4>#}
+{#<br>#}
+{#<a href="{{ url_for('login_putong') }}">普通员工登录</a>#}
+{#<br>#}
+{#<a href="{{ url_for('login_hr') }}">人力资源员工登录</a>#}
+{#<br>#}
+{#<a href="{{ url_for('login_manager') }}">部门经理登录</a>#}
+<div class="main">
+    <h3 class="page-title">主页</h3>
+    <a href="{{ url_for('login_putong') }}">普通员工登录</a>
+    <hr><br>
+    <a href="{{ url_for('login_hr') }}">人力资源员工登录</a>
+    <hr><br>
+    <a href="{{ url_for('login_manager') }}">部门经理登录</a>
+    <br>
+</div>
+</body>
+</html>

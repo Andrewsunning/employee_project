@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+</head>
+<body>
+    <h4>这是修改员工信息界面</h4>
+    <form action="{{ url_for('manager_update') }}" method="POST">
+        员工编号：<input type="text" name="EID" placeholder="员工编号">
+        <br>
+        员工姓名：<input type="text" name="Ename" placeholder="员工姓名">
+        <br>
+        员工岗位：<input type="text" name="job" placeholder="员工岗位">
+        <br>
+        基本工资：<input type="text" name="basicWage" placeholder="基本工资">
+        <br>
+        <button>修改</button>
+    </form>
+</body>
+</html>

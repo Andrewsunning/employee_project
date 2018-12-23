@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改</title>
+</head>
+<body>
+    <h4>这是修改员工工资信息界面</h4>
+    <form action="{{ url_for('hr_update') }}" method="POST">
+        员工编号：<input type="text" name="EID" placeholder="员工编号">
+        <br>
+        员工姓名：<input type="text" name="Ename" placeholder="员工姓名">
+        <br>
+{#        不可能让hr修改密码吧#}
+{#        员工密码：<input type="text" name="password" placeholder="默认是123">#}
+{#        <br>#}
+{#        员工岗位：<input type="text" name="job" placeholder="员工岗位">#}
+{#        <br>#}
+        工资月份：<input type="text" name="date" placeholder="工资月份">
+        <br>
+        迟到次数：<input type="text" name="lateTimes" placeholder="迟到次数">
+        <br>
+        早退次数：<input type="text" name="earlyTimes" placeholder="早退次数">
+        <br>
+        请假次数：<input type="text" name="leaveTimes" placeholder="请假次数">
+        <br>
+{#        基本工资：<input type="text" name="basicWage" placeholder="基本工资">#}
+{#        <br>#}
+        加班工资：<input type="text" name="overTimeWage" placeholder="加班工资">
+        <br>
+        考勤工资：<input type="text" name="checkWage" placeholder="考勤工资">
+{#        试试通过后台计算出实收工资#}
+{#        <br>#}
+{#        实收工资：<input type="text" name="basicWage" placeholder="实收工资">#}
+        <br>
+        <button>修改</button>
+    </form>
+</body>
+</html>

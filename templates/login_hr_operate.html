@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hr工资管理-员工工资统计系统</title>
+</head>
+<body>
+    <h4>你好!{{ employee.Ename }}</h4>
+    <br>
+    <a href="{{ url_for('hr_search') }}">查询员工工资信息</a>
+    <br>
+    <a href="{{ url_for('hr_insert') }}">录入员工工资信息</a>
+    <br>
+    <a href="{{ url_for('hr_update') }}">修改员工工资信息</a>
+    <br>
+    <a href="{{ url_for('hr_search_feedback') }}">查看员工反馈</a>
+</body>
+</html>
